@@ -9,7 +9,7 @@ dockerpath="duongaity/udacity-flask-app"
 
 # Step 2
 # Run the Docker Hub container with kubernetes
-kubectl create deployment flaskdeployed --image="${dockerpath}:flask1"
+kubectl create deployment flaskdeployed --image="${dockerpath}:flaskapp-v1"
 
 # Step 3:
 # List kubernetes pods
