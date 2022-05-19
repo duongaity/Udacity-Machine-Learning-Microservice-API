@@ -19,8 +19,8 @@ You are given a pre-trained, `sklearn` model that has been trained to predict ho
 ## Setup the Environment
 * Create a virtualenv with Python 3.7 and activate it. Refer to this link for help on specifying the Python version in the virtualenv. 
 ```
-python3 -m venv <your_venv>
-source <your_venv>/bin/activate
+python3 -m venv ~/.devops
+source ~/.devops/bin/activate
 ```
 * Run `make install` to install the necessary dependencies
 
