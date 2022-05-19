@@ -6,14 +6,14 @@
 # Step 1:
 # Create dockerpath
 # dockerpath=<your docker ID/path>
-dockerpath="duongaity/udacity-flask-app"
+dockerpath=duongaity/udacityapp
 
 # Step 2:  
 # Authenticate & tag
 echo "Docker ID and Image: $dockerpath"
-docker login --username duongaity
-docker tag flask-app "${dockerpath}:v1.0.1"
+docker login -u duongaity
+docker tag udacityapp $dockerpath:v1.0.0
 
 # Step 3:
 # Push image to a docker repository
-docker push "${dockerpath}:v1.0.1"
+docker push $dockerpath
