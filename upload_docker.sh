@@ -11,8 +11,8 @@ dockerpath=duongaity/udacityapp
 # Step 2:  
 # Authenticate & tag
 echo "Docker ID and Image: $dockerpath"
-docker login -u duongaity
-docker tag udacityapp $dockerpath:v1.0.0
+docker login
+docker tag udacityapp $dockerpath
 
 # Step 3:
 # Push image to a docker repository

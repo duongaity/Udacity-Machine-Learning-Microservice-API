@@ -5,11 +5,11 @@
 # Step 1:
 # This is your Docker ID/path
 # dockerpath=<>
-dockerpath="duongaity/udacityapp"
+dockerpath=duongaity/udacityapptest
 
 # Step 2
 # Run the Docker Hub container with kubernetes
-kubectl create deployment flaskdeployed --image=$dockerpath
+kubectl run udacityapp --image=$dockerpath --port=80
 
 # Step 3:
 # List kubernetes pods
@@ -17,4 +17,4 @@ kubectl get pods
 
 # Step 4:
 # Forward the container port to a host
-kubectl port-forward deployment/udacityapp 8000:80
+kubectl port-forward pod/udacityapp --address 0.0.0.0 8000:80
